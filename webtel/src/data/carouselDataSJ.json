@@ -1,0 +1,36 @@
+{
+    "slides": [
+        {
+            "src": "img_campus/sj/img1.jpeg",
+            "alt": "Image 1 for carousel"
+        },
+        {
+            "src": "img_campus/sj/img2.jpg",
+            "alt": "Image 2 for carousel"
+        },
+        {
+            "src": "img_campus/sj/img3.jpg",
+            "alt": "Image 3 for carousel"
+        },
+        {
+            "src": "img_campus/sj/img4.jpg",
+            "alt": "Image 4 for carousel"
+        },
+        {
+            "src": "img_campus/sj/img5.jpg",
+            "alt": "Image 5 for carousel"
+        },
+        {
+            "src": "img_campus/sj/img6.jpg",
+            "alt": "Image 6 for carousel"
+        },
+        {
+            "src": "img_campus/sj/img7.jpg",
+            "alt": "Image 7 for carousel"
+        },
+        {
+            "src": "img_campus/sj/img8.jpg",
+            "alt": "Image 8 for carousel"
+        }
+    ]
+}

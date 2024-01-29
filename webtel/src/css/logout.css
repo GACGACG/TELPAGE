@@ -1,0 +1,29 @@
+.signout {
+    background-color: #3282B8;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    transition: background-color ease-in-out 250ms;
+    width: max-content;
+}
+
+.signout:hover {
+    background-color: #0F4C75;
+}
+
+.signoutMobile {
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+    .signout {
+        display: none;
+    }
+}

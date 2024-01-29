@@ -1,0 +1,119 @@
+p {
+    margin: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #3282b8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 1rem;
+    transition: width 0.3s ease;
+    width: auto;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.75rem;
+    text-decoration: none;
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: fit-content;
+}
+
+.navbar-link {
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0.5rem;
+    transition: background-color ease-in-out 20ms;
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-link:hover {
+    background-color: #1B262C;
+}
+
+.navbar-link p {
+    margin-left: 1.5rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings {
+    margin-top: auto;
+}
+
+.settings .navbar-link:last-child {
+    margin-bottom: 0rem;
+}
+
+.svg {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.toggleButton {
+    background: #D9D9D9;
+    border: none;
+    color: black;
+    cursor: pointer;
+    height: 100vh;
+    padding: 0;
+    width: 4px;
+}
+
+.toggleButton:hover {
+    background: #f7ae0090;
+}
+
+/* Utilitarios */
+
+.collapsed {
+    width: calc(3rem + 40px);
+}
+
+/* Vista en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .toggleButton {
+        display: none;
+    }
+}
+
+/* Vista en tablets/ipads */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+
+    .toggleButton {
+        display: none;
+    }
+}

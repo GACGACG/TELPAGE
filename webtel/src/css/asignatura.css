@@ -1,0 +1,13 @@
+.asignatura {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.asignatura-title {
+    color: black;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+}

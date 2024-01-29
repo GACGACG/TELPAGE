@@ -1,0 +1,264 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+}
+
+.header {
+  background-color: #1B262C;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.logo {
+  width: 5%;
+}
+
+.logo:hover {
+  filter: drop-shadow(0px 0px 2px #666);
+}
+
+.logo-text {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 200%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+.ingresa-btn {
+  padding: 10px 20px;
+  background-color: #3228B8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 80%;
+}
+
+.ingresa-btn:hover {
+  background-color: #2d20e1;
+  filter: drop-shadow(0px 0px 1px #666);
+  text-decoration: underline;
+}
+
+.ingresa-btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.ingresa-btn a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.scroll-container {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.section h2 {
+  color: #1B262C;
+}
+
+.section p {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #1B262C;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#inicio p {
+  font-size: 180%;
+  text-align: justify;
+}
+
+#inicio h2,
+#quienes-somos h2,
+#sedes h2,
+#contacto h2 {
+  font-size: 180%;
+}
+
+#inicio p,
+#quienes-somos p,
+#contacto p {
+  margin-inline: 2%;
+  font-size: larger;
+}
+
+/* Estilos para la categoría "Sedes" */
+
+.sedes {
+  width: 100%;
+  padding: 0 1.5%;
+}
+
+.sedes h2 {
+  text-align: center;
+  margin-bottom: 5%;
+
+}
+
+.sedes-container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sedes-text-1 h2 {
+  font-size: 200%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.sedes-text-1 p {
+  margin-left: 5%;
+  font-size: large;
+  text-align: justify;
+}
+
+.sedes-text-2 h2 {
+  font-size: 200%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.sedes-text-2 p {
+  margin-right: 5%;
+  font-size: large;
+  text-align: justify;
+}
+
+.sedes-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sedes-item-1 {
+  margin-bottom: 3%;
+}
+
+.sedes-item>.Carousel {
+  flex-basis: 25%;
+}
+
+.sedes-text-1,
+.sedes-text-2 {
+  flex-basis: 75%;
+}
+
+.map {
+  height: 35rem;
+  width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10%;
+}
+
+/* Vista en celulares (vertical) */
+@media (max-width: 1200px) {
+  #inicio p {
+    margin-inline: 5%;
+    text-align: justify;
+  }
+
+  .logo {
+    width: 18%;
+    margin-left: -3%;
+  }
+
+  .logo-text {
+    left: 50%;
+    font-size: 20px;
+  }
+
+  .ingresa-btn {
+    padding: 10px 12px;
+    width: 22%;
+  }
+
+  .sedes-item {
+    flex-direction: column;
+  }
+
+  .sedes-item>.Carousel,
+  .sedes-text-1,
+  .sedes-text-2 {
+    flex-basis: 95%;
+    order: 2;
+  }
+
+  .sedes-text-1 h2,
+  .sedes-text-2 h2 {
+    order: 1;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .sedes-text-1 p,
+  .sedes-text-2 p {
+    order: 3;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .map {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+}
+
+/* Ocultar barra de desplazamiento */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
