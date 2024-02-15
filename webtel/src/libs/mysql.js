@@ -1,13 +1,12 @@
-import mysql from "serverless-mysql";
+import mysql from "mysql2/promise";
 
-const connection = mysql({
-    config: {
-        host: "localhost",
-        user: "root",
-        password: "admin",
-        database: "bd",
-        timezone: "+0000"
-    }
-});
+
+const connection = await mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'admin',
+    database: 'BD',
+  });
+
 
 export default connection;
